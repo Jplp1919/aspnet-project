@@ -1,0 +1,11 @@
+C:\Users\criatec\source\repos\api\api test\App.Api\App.Common\bin\Debug\net7.0\App.Common.deps.json
+C:\Users\criatec\source\repos\api\api test\App.Api\App.Common\bin\Debug\net7.0\App.Common.dll
+C:\Users\criatec\source\repos\api\api test\App.Api\App.Common\bin\Debug\net7.0\App.Common.pdb
+C:\Users\criatec\source\repos\api\api test\App.Api\App.Common\obj\Debug\net7.0\App.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\criatec\source\repos\api\api test\App.Api\App.Common\obj\Debug\net7.0\App.Common.AssemblyInfoInputs.cache
+C:\Users\criatec\source\repos\api\api test\App.Api\App.Common\obj\Debug\net7.0\App.Common.AssemblyInfo.cs
+C:\Users\criatec\source\repos\api\api test\App.Api\App.Common\obj\Debug\net7.0\App.Common.csproj.CoreCompileInputs.cache
+C:\Users\criatec\source\repos\api\api test\App.Api\App.Common\obj\Debug\net7.0\App.Common.dll
+C:\Users\criatec\source\repos\api\api test\App.Api\App.Common\obj\Debug\net7.0\refint\App.Common.dll
+C:\Users\criatec\source\repos\api\api test\App.Api\App.Common\obj\Debug\net7.0\App.Common.pdb
+C:\Users\criatec\source\repos\api\api test\App.Api\App.Common\obj\Debug\net7.0\ref\App.Common.dll

@@ -47,14 +47,15 @@ namespace App.Application.Services
             {
                 throw new ArgumentException("Usuário não encontrado.");
             }
-            Pessoa dadosAtualizados = new Pessoa();
-            dadosAtualizados.Id = dadosAntigos.Id;
-            dadosAtualizados.Nome = (pessoa.Nome != null) ? pessoa.Nome :
-            dadosAntigos.Nome;
-            dadosAtualizados.Email = (pessoa.Email != null) ? pessoa.Email :
-            dadosAntigos.Email;
-            dadosAtualizados.Senha = (pessoa.Senha != null) ? pessoa.Senha :
-            dadosAntigos.Senha;
+            Pessoa dadosAtualizados = new Pessoa
+            {
+                Id = dadosAntigos.Id,
+                Nome = pessoa.Nome ?? dadosAntigos.Nome,
+                Email = (pessoa.Email != null) ? pessoa.Email :
+            dadosAntigos.Email,
+                Senha = (pessoa.Senha != null) ? pessoa.Senha :
+            dadosAntigos.Senha
+            };
             _repository.Update(dadosAtualizados);
             _repository.SaveChanges();
         }
