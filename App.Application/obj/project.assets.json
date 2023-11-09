@@ -538,6 +538,16 @@
           }
         }
       },
+      "App.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/App.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/App.Common.dll": {}
+        }
+      },
       "App.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -2249,6 +2259,11 @@
         "system.threading.tasks.nuspec"
       ]
     },
+    "App.Common/1.0.0": {
+      "type": "project",
+      "path": "../App.Common/App.Common.csproj",
+      "msbuildProject": "../App.Common/App.Common.csproj"
+    },
     "App.Domain/1.0.0": {
       "type": "project",
       "path": "../App.Domain/App.Domain.csproj",
@@ -2257,6 +2272,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "App.Common >= 1.0.0",
       "App.Domain >= 1.0.0",
       "Microsoft.Extensions.DependencyInjection >= 7.0.0"
     ]
@@ -2288,6 +2304,9 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
+            "C:\\Users\\criatec\\source\\repos\\api\\api test\\App.Api\\App.Common\\App.Common.csproj": {
+              "projectPath": "C:\\Users\\criatec\\source\\repos\\api\\api test\\App.Api\\App.Common\\App.Common.csproj"
+            },
             "C:\\Users\\criatec\\source\\repos\\api\\api test\\App.Api\\App.Domain\\App.Domain.csproj": {
               "projectPath": "C:\\Users\\criatec\\source\\repos\\api\\api test\\App.Api\\App.Domain\\App.Domain.csproj"
             }

@@ -20,7 +20,7 @@ namespace App.Api.Controllers
         {
             try
             {
-               _pessoaService.Criar(pessoa);
+                _pessoaService.Criar(pessoa);
                 return Json(RetornoApi.Sucesso("Pessoa criada com sucesso!"));
             }
             catch (Exception ex)
