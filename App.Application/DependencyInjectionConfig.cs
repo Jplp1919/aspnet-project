@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace App.Application
 {
-    internal class DependencyInjectionConfig
+    public class DependencyInjectionConfig
     {
         public static void Inject(IServiceCollection services)
         {

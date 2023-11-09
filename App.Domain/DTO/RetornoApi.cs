@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace App.Domain.DTO
 {
-    internal class RetornoApi
+    public class RetornoApi
     {
 
         [JsonProperty(PropertyName = "status", NullValueHandling = NullValueHandling.Ignore)]

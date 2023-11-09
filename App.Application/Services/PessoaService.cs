@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace App.Application.Services
 {
-    internal class PessoaService : IPessoaService
+    public class PessoaService : IPessoaService
     {
         private IRepositoryBase<Pessoa> _repository { get; set; }
         public PessoaService(IRepositoryBase<Pessoa> repository)
