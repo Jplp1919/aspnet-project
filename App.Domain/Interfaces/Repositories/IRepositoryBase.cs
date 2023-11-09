@@ -6,22 +6,20 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
+using System.Linq.Expressions;
 
 namespace App.Domain.Interfaces.Repositories
 {
-    public interface IRepositoryBase where TEntity : class
+    public interface IRepositoryBase<TEntity> where TEntity : class
     {
-        IOrderedQueryable<TEntity> Query(Expression<TEntity, bool>> where);
+        IQueryable<TEntity> Query(Expression<Func<TEntity, bool>>where);
         void Save(TEntity obj);
         void Update(TEntity obj);
         void Delete(int id);
 
-        int saveChanges();
+        int SaveChanges();
 
         DbContext Context();
-
-
-
 
 
     }

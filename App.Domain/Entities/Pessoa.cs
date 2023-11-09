@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace App.Domain.Entities
 {
-    internal class Pessoa
+    public class Pessoa
     {
         public int Id { get; set; }
 

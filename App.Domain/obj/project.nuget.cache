@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "7iiwMPq1IZ7YAxpqfL9Ddqr72llD806ijBIibPuChQ7oPveS8tCaT9pLPwoFNTmkl6J7JgNbRwV1oslMZsfYiw==",
+  "dgSpecHash": "mMY8U0dh+qjeaMRore+dTSP35NhqAnWM5Nn+obiuEv8X0uNL0Q1w+KoNdGK4LLdE6OK9Za8Le11S9bx+q7TH2w==",
   "success": true,
   "projectFilePath": "C:\\Users\\criatec\\source\\repos\\api\\api test\\App.Api\\App.Domain\\App.Domain.csproj",
   "expectedPackageFiles": [
@@ -17,6 +17,7 @@
     "C:\\Users\\criatec\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
     "C:\\Users\\criatec\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\criatec\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\criatec\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\criatec\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\criatec\\.nuget\\packages\\system.diagnostics.debug\\4.3.0\\system.diagnostics.debug.4.3.0.nupkg.sha512",
     "C:\\Users\\criatec\\.nuget\\packages\\system.globalization\\4.3.0\\system.globalization.4.3.0.nupkg.sha512",

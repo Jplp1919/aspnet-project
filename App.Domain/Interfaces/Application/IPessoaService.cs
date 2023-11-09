@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace App.Domain.Interfaces.Application
 {
-    internal interface IPessoaService
+    public interface IPessoaService
     {
         void Editar(Pessoa obj);
 
         void Deletar(int id);
 
-        void criar(Pessoa obj);
+        void Criar(Pessoa obj);
 
         Pessoa BuscarPorId(int id);
 
