@@ -44,7 +44,7 @@ class
                 _dbSetEntity.Remove(data);
             }
         }
-        public int saveChanges()
+        public int SaveChanges()
         {
             var written = 0;
             while (written == 0)
@@ -69,7 +69,6 @@ class
             return _dbContextEntity;
         }
 
-  
 
     }
 }
