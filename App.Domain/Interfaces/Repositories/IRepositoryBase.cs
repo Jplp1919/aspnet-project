@@ -16,9 +16,7 @@ namespace App.Domain.Interfaces.Repositories
         void Save(TEntity obj);
         void Update(TEntity obj);
         void Delete(int id);
-
         int SaveChanges();
-
         DbContext Context();
 
 
