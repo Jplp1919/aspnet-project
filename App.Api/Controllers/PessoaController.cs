@@ -67,6 +67,22 @@ namespace App.Api.Controllers
                 return Json(RetornoApi.Erro(ex.Message));
             }
         }
+
+        [HttpGet("login")]
+        public IActionResult Login([FromHeader] string email, string senha)
+        {
+            try
+            {
+                var pessoa = _pessoaService.Login(email, senha);
+                return Json(RetornoApi.Sucesso(pessoa));
+            }
+            catch (Exception ex)
+            {
+                return Json(RetornoApi.Erro(ex.Message));
+            }
+        }
+
+
         [HttpGet("buscarLista")]
         public IActionResult BuscarLista()
         {

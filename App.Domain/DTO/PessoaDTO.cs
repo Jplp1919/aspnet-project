@@ -1,12 +1,12 @@
-﻿using System;
+﻿    using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace App.Domain.Entities
+namespace App.Domain.DTO
 {
-    public class Pessoa
+    public class PessoaDTO
     {
         public int Id { get; set; }
 
@@ -16,6 +16,6 @@ namespace App.Domain.Entities
 
         public string Senha { get; set; }
 
-
+        public string Token { get; set; }
     }
 }

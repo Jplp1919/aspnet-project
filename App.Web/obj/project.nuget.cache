@@ -1,8 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "Jfv55tUwRTHYjG+wtz6VQ89CR+KNKo6X6LaXNgG1xCjBBlYJCfsOyE97KHWbkvDLN8ujcipSMjX/ROxW8rbq9Q==",
+  "dgSpecHash": "6UBnPwLz/t9S2Ux6jmP9u4F7Ulv7LK6Ymbp++ZKRo9gS0Aw/PoC/n3awYrya4s5GGK5mlNljdxxXYJwi65zoSw==",
   "success": true,
   "projectFilePath": "C:\\Users\\criatec\\source\\repos\\api\\api test\\App.Api\\App.Web\\App.Web.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\criatec\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\7.0.13\\microsoft.aspnetcore.authentication.jwtbearer.7.0.13.nupkg.sha512",
+    "C:\\Users\\criatec\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\criatec\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.15.1\\microsoft.identitymodel.jsonwebtokens.6.15.1.nupkg.sha512",
+    "C:\\Users\\criatec\\.nuget\\packages\\microsoft.identitymodel.logging\\6.15.1\\microsoft.identitymodel.logging.6.15.1.nupkg.sha512",
+    "C:\\Users\\criatec\\.nuget\\packages\\microsoft.identitymodel.protocols\\6.15.1\\microsoft.identitymodel.protocols.6.15.1.nupkg.sha512",
+    "C:\\Users\\criatec\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.15.1\\microsoft.identitymodel.protocols.openidconnect.6.15.1.nupkg.sha512",
+    "C:\\Users\\criatec\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.15.1\\microsoft.identitymodel.tokens.6.15.1.nupkg.sha512",
+    "C:\\Users\\criatec\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.15.1\\system.identitymodel.tokens.jwt.6.15.1.nupkg.sha512",
+    "C:\\Users\\criatec\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512"
+  ],
   "logs": []
 }

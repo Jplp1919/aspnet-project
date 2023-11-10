@@ -2,6 +2,10 @@ using App.Persistence;
 
 using Microsoft.EntityFrameworkCore;
 using App.Domain.Interfaces.Application;
+using System.Text;
+using App.Application;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,7 +19,24 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 
 
+var key = Encoding.ASCII.GetBytes(Settings.Secret);
 
+builder.Services.AddAuthentication(x =>
+{
+    x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+}).AddJwtBearer(x =>
+{
+    x.RequireHttpsMetadata = false;
+    x.SaveToken = true;
+    x.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuerSigningKey = true,
+        IssuerSigningKey = new SymmetricSecurityKey(key),
+        ValidateIssuer = false,
+        ValidateAudience = false,
+    };
+});
 
 
 //Injeção de dependências
@@ -48,6 +69,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseAuthentication();
+
 app.UseAuthorization();
 app.UseCors("AllowAnyOrigin");
 app.MapControllers();

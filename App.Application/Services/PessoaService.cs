@@ -79,5 +79,15 @@ namespace App.Application.Services
             return _repository.Query(x => 1 == 1).ToList();
         }
 
+        public Pessoa Login(string email, string senha)
+        {
+           var pessoas = new List<Pessoa>() { 
+             new Pessoa { Id = 1, Nome = "Johnny", Email = "silverhand@samurai.net", Senha = "samurai" },
+             new Pessoa { Id = 1, Nome = "V", Email = "v@arasaka.net", Senha = "123" }
+       };
+            return pessoas.FirstOrDefault(x =>
+            x.Email == email
+            && x.Senha == senha);
+        }
     }
 }

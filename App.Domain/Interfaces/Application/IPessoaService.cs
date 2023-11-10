@@ -15,6 +15,8 @@ namespace App.Domain.Interfaces.Application
 
         void Criar(Pessoa obj);
 
+         Pessoa Login(string email, string senha);
+
         Pessoa BuscarPorId(int id);
 
         List<Pessoa> BuscarLista();

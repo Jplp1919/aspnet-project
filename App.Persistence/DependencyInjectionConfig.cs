@@ -9,13 +9,15 @@ using System.Threading.Tasks;
 
 namespace App.Persistence
 {
-   public class DependencyInjectionConfig
+    public class DependencyInjectionConfig
     {
-        public static void Inject(IServiceCollection services) { 
-        
+        public static void Inject(IServiceCollection services)
+        {
+
             services.AddScoped(typeof(IRepositoryBase<>), typeof(RepositoryBase<>));
 
 
         }
     }
 }
+
