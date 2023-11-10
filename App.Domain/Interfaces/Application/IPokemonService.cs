@@ -13,6 +13,7 @@ namespace App.Domain.Interfaces.Application
         void Deletar(int id);
         void Criar(Pokemon obj);
         Pokemon BuscarPorId(int id);
+        Pokemon BuscarPorNome(String nome);
         List<Pokemon> BuscarLista();
 
     }

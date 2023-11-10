@@ -88,5 +88,11 @@ namespace App.Application.Services
             _repository.Update(dadosAtualizados);
             _repository.SaveChanges();
         }
+
+        Pokemon IPokemonService.BuscarPorNome(string nome)
+        {
+            var obj = _repository.Query(x => x.Nome == nome).FirstOrDefault();
+            return obj;
+        }
     }
 }

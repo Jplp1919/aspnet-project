@@ -73,6 +73,22 @@ namespace App.Api.Controllers
             }
         }
 
+
+        [HttpGet("buscarPorNome")]
+        public IActionResult BuscarPorNome([FromHeader] string nome)
+        {
+            try
+            {
+                var pokemon = _pokemonService.BuscarPorNome(nome);
+                return Json(RetornoApi.Sucesso(pokemon));
+            }
+            catch (Exception ex)
+            {
+                return Json(RetornoApi.Erro(ex.Message));
+            }
+        }
+
+
         [HttpGet("buscarLista")]
         public IActionResult BuscarLista()
         {

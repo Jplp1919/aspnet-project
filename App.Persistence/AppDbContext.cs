@@ -22,5 +22,7 @@ namespace App.Persistence
 
         public DbSet<Pessoa> pessoas { get; set; }
 
+        public DbSet<Pokemon> pokemons { get; set; } 
+
     }
 }
