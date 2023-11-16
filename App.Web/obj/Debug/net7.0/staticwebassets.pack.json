@@ -25,10 +25,6 @@
       "PackagePath": "staticwebassets\\js\\core\\requester.js"
     },
     {
-      "Id": "C:\\Users\\criatec\\source\\repos\\api\\api test\\App.Api\\App.Web\\wwwroot\\js\\services\\CidadeService.js",
-      "PackagePath": "staticwebassets\\js\\services\\CidadeService.js"
-    },
-    {
       "Id": "C:\\Users\\criatec\\source\\repos\\api\\api test\\App.Api\\App.Web\\wwwroot\\js\\services\\PessoaService.js",
       "PackagePath": "staticwebassets\\js\\services\\PessoaService.js"
     },
