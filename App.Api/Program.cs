@@ -55,6 +55,8 @@ builder.Services.AddCors(options =>
 var app = builder.Build();
 
 
+
+
 //Executa Migration
 using (var scope = app.Services.CreateScope())
 {
@@ -67,6 +69,15 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseCors(options =>
+{
+    options
+    .AllowAnyOrigin()
+    .AllowAnyHeader()
+    .AllowAnyMethod();
+
+});
 
 app.UseHttpsRedirection();
 app.UseAuthentication();

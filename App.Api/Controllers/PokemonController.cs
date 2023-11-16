@@ -15,6 +15,7 @@ namespace App.Api.Controllers
 
         public PokemonController(IPokemonService pokemonService)
         {
+           
             _pokemonService = pokemonService;
         }
         [HttpPost("criar")]
