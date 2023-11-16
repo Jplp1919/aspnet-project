@@ -1,4 +1,5 @@
-﻿  async function PessoaListaPessoas() {
+﻿
+            async function PessoaListaPessoas() {
                 return new Promise((resolve, reject) => {
                     Get('pessoa/buscarLista').then(function (response) {
                         if (response.status === 'success') {
