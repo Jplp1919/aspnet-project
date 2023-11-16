@@ -16,8 +16,4 @@
     <ProjectReference Include="..\App.Common\App.Common.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="wwwroot\js\pages\" />
-  </ItemGroup>
-
 </Project>
