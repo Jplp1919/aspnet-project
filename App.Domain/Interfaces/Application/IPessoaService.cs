@@ -19,7 +19,7 @@ namespace App.Domain.Interfaces.Application
 
         Pessoa BuscarPorId(int id);
 
-        List<Pessoa> BuscarLista();
+        List<Pessoa> BuscarLista(string? busca);
 
 
     }

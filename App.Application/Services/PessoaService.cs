@@ -75,9 +75,21 @@ namespace App.Application.Services
             var obj = _repository.Query(x => x.Id == id).FirstOrDefault();
             return obj;
         }
-        public List<Pessoa> BuscarLista()
+        public List<Pessoa> BuscarLista(string? busca)
         {
-            return _repository.Query(x => 1 == 1).ToList();
+            busca = (busca ?? "").ToUpper();
+
+            return _repository.Query(x =>
+
+           (
+           x.Nome.ToUpper().Contains(busca) ||
+           x.Id.ToString().ToUpper().Contains(busca) ||
+           x.Email.ToUpper().Contains(busca)
+           )
+
+           ).ToList();
+
+
         }
 
         public Pessoa Login(string email, string senha)
