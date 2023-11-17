@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "xRnkQUPgNb0FB9RxqS3Mg4WBf0VyEa/R6TY5GwJZPoA=",
+  "Hash": "vzfrmleAvuv3uUu1B6PYLwtaEvr+I5pXI3XhoCBelmY=",
   "Source": "App.Web",
   "BasePath": "_content/App.Web",
   "Mode": "Default",
@@ -136,23 +136,6 @@
       "OriginalItemSpec": "wwwroot\\js\\core\\requester.js"
     },
     {
-      "Identity": "C:\\Users\\criatec\\source\\repos\\api\\api test\\App.Api\\App.Web\\wwwroot\\js\\pages\\pessoas.cshtml",
-      "SourceId": "App.Web",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\criatec\\source\\repos\\api\\api test\\App.Api\\App.Web\\wwwroot\\",
-      "BasePath": "_content/App.Web",
-      "RelativePath": "js/pages/pessoas.cshtml",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "wwwroot\\js\\pages\\pessoas.cshtml"
-    },
-    {
       "Identity": "C:\\Users\\criatec\\source\\repos\\api\\api test\\App.Api\\App.Web\\wwwroot\\js\\pages\\pessoas.js",
       "SourceId": "App.Web",
       "SourceType": "Discovered",
@@ -170,21 +153,21 @@
       "OriginalItemSpec": "wwwroot\\js\\pages\\pessoas.js"
     },
     {
-      "Identity": "C:\\Users\\criatec\\source\\repos\\api\\api test\\App.Api\\App.Web\\wwwroot\\js\\pages\\pessoas-formulario.cshtml",
+      "Identity": "C:\\Users\\criatec\\source\\repos\\api\\api test\\App.Api\\App.Web\\wwwroot\\js\\pages\\pessoas-formulario.js",
       "SourceId": "App.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\criatec\\source\\repos\\api\\api test\\App.Api\\App.Web\\wwwroot\\",
       "BasePath": "_content/App.Web",
-      "RelativePath": "js/pages/pessoas-formulario.cshtml",
-      "AssetKind": "Build",
+      "RelativePath": "js/pages/pessoas-formulario.js",
+      "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "wwwroot\\js\\pages\\pessoas-formulario.cshtml"
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\pages\\pessoas-formulario.js"
     },
     {
       "Identity": "C:\\Users\\criatec\\source\\repos\\api\\api test\\App.Api\\App.Web\\wwwroot\\js\\services\\PessoaService.js",

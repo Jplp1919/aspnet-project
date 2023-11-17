@@ -24,6 +24,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/criatec/source/repos/api/api test/App.Api/App.Web/Pages/pessoas-formulario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNccGVzc29hcy1mb3JtdWxhcmlvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/criatec/source/repos/api/api test/App.Api/App.Web/Pages/pessoas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNccGVzc29hcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/criatec/source/repos/api/api test/App.Api/App.Web/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -38,14 +46,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/criatec/source/repos/api/api test/App.Api/App.Web/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/criatec/source/repos/api/api test/App.Api/App.Web/wwwroot/js/pages/pessoas-formulario.cshtml]
-build_metadata.AdditionalFiles.TargetPath = d3d3cm9vdFxqc1xwYWdlc1xwZXNzb2FzLWZvcm11bGFyaW8uY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/criatec/source/repos/api/api test/App.Api/App.Web/wwwroot/js/pages/pessoas.cshtml]
-build_metadata.AdditionalFiles.TargetPath = d3d3cm9vdFxqc1xwYWdlc1xwZXNzb2FzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/criatec/source/repos/api/api test/App.Api/App.Web/Pages/Shared/_Layout.cshtml]

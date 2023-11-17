@@ -1,8 +1,8 @@
 ﻿function salvar() {
     let obj = {
-        nome: ($("[name='nome']").val() || ""),
-        nome: ($("[name='email']").val() || ""),
-        nome: ($("[name='senha']").val() || "")
+        Nome: ($("[name='Nome']").val() || ""),
+        Email: ($("[name='Email']").val() || ""),
+        Senha: ($("[name='Senha']").val() || "")
     };
     PessoaCriar(obj).then(function () {
         window.location.href = '/pessoas';
