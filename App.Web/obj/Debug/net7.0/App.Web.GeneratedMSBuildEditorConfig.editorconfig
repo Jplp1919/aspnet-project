@@ -36,6 +36,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNccGVzc29hcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/criatec/source/repos/api/api test/App.Api/App.Web/Pages/pokemon-formulario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNccG9rZW1vbi1mb3JtdWxhcmlvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/criatec/source/repos/api/api test/App.Api/App.Web/Pages/pokemon.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNccG9rZW1vbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/criatec/source/repos/api/api test/App.Api/App.Web/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

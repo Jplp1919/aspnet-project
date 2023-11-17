@@ -43,7 +43,7 @@ namespace App.Api.Controllers
             }
         }
         [HttpDelete("deletar")]
-        public IActionResult Deletar([FromHeader] int id)
+        public IActionResult Deletar([FromBody] int id)
         {
             try
             {

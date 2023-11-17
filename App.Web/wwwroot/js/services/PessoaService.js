@@ -49,7 +49,8 @@ async function PessoaCriar(obj) {
 async function PessoaDeletar(id) {
 
     return new Promise((resolve, reject) => {
-        Delete('pessoa/deletar?id=' + id).then(function (response) {
+       
+        Delete('pessoa/deletar', id).then(function (response) {
             if (response.status === 'success') {
                 resolve(response.data);
             } else {

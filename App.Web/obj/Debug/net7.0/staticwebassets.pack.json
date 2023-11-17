@@ -37,8 +37,20 @@
       "PackagePath": "staticwebassets\\js\\pages\\pessoas.js"
     },
     {
+      "Id": "C:\\Users\\criatec\\source\\repos\\api\\api test\\App.Api\\App.Web\\wwwroot\\js\\pages\\pokemon-formulario.js",
+      "PackagePath": "staticwebassets\\js\\pages\\pokemon-formulario.js"
+    },
+    {
+      "Id": "C:\\Users\\criatec\\source\\repos\\api\\api test\\App.Api\\App.Web\\wwwroot\\js\\pages\\pokemon.js",
+      "PackagePath": "staticwebassets\\js\\pages\\pokemon.js"
+    },
+    {
       "Id": "C:\\Users\\criatec\\source\\repos\\api\\api test\\App.Api\\App.Web\\wwwroot\\js\\services\\PessoaService.js",
       "PackagePath": "staticwebassets\\js\\services\\PessoaService.js"
+    },
+    {
+      "Id": "C:\\Users\\criatec\\source\\repos\\api\\api test\\App.Api\\App.Web\\wwwroot\\js\\services\\PokemonService.js",
+      "PackagePath": "staticwebassets\\js\\services\\PokemonService.js"
     },
     {
       "Id": "C:\\Users\\criatec\\source\\repos\\api\\api test\\App.Api\\App.Web\\wwwroot\\js\\site.js",

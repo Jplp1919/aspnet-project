@@ -1,0 +1,31 @@
+﻿@page "/pokemon/formulario"
+<h4>Formulário de Pokemon</h4>
+<div class="row">
+    <div class="col-md-6 col-sm-12">
+        <div class="col-md-3 col-sm-12">
+            <label>Nome</label>
+            <input type="text" name="Nome" class="form-control">
+        </div>
+    </div>
+    <div class="col-md-12 col-sm-12">
+        <div class="col-md-3 col-sm-12">
+            <label>Level</label>
+            <input type="text" name="Level" class="form-control">
+        </div>
+    </div>
+    <div class="col-md-6 col-sm-12">
+        <div class="col-md-3 col-sm-12">
+            <label>Tipo</label>
+            <input type="text" name="Tipo" class="form-control">
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <button onclick="window.location.href='/pokemon'">Cancelar</button>
+    <button onclick="salvar();">Salvar</button>
+</div>
+
+@section Scripts{
+    <script src="~/js/pages/pokemon-formulario.js"></script>
+}

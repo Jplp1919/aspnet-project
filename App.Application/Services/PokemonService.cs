@@ -19,6 +19,8 @@ namespace App.Application.Services
             _repository = repository;
         }
 
+
+
         public void ValidarDados(Pokemon pokemon)
         {
             if (string.IsNullOrEmpty(pokemon.Nome))
@@ -44,9 +46,23 @@ namespace App.Application.Services
             _repository.SaveChanges();
         }
 
-        public List<Pokemon> BuscarLista()
+        public List<Pokemon> BuscarLista(string? busca)
         {
-            return _repository.Query(x=>1 == 1).ToList();
+          
+
+            busca = (busca ?? "").ToUpper();
+
+            return _repository.Query(x =>
+
+           (
+           x.Id.ToString().ToUpper().Contains(busca) ||
+           x.Nome.ToUpper().Contains(busca) ||
+           x.Level.ToString().ToUpper().Contains(busca)||
+           x.Tipo.Contains(busca)
+           
+           )
+
+           ).ToList();
         }
 
         public Pokemon BuscarPorId(int id)

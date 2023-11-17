@@ -91,19 +91,19 @@ namespace App.Api.Controllers
         }
 
 
-        [HttpGet("buscarLista")]
-        public IActionResult BuscarLista()
-        {
+       [HttpGet("buscarLista")]
+        public JsonResult BuscarLista(string? busca)
+       {
             try
             {
-                var listaPokemons = _pokemonService.BuscarLista();
-                return Json(RetornoApi.Sucesso(listaPokemons));
-            }
-            catch (Exception ex)
+              var obj = _pokemonService.BuscarLista(busca);
+               return Json(RetornoApi.Sucesso(obj));
+          }
+          catch (Exception ex)
             {
                 return Json(RetornoApi.Erro(ex.Message));
             }
-        }
+       }
 
     }
 }
