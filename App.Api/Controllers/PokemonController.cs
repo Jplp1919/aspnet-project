@@ -49,6 +49,7 @@ namespace App.Api.Controllers
         [HttpDelete("deletar")]
         public IActionResult Deletar([FromHeader] int id)
         {
+            Console.WriteLine(id);
             try
             {
                 _pokemonService.Deletar(id);

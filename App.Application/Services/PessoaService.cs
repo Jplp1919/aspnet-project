@@ -62,9 +62,11 @@ namespace App.Application.Services
         }
         public void Deletar(int id)
         {
+
             var dadosAntigos = _repository.Query(x => x.Id == id).FirstOrDefault();
             if (dadosAntigos == null)
             {
+               
                 throw new ArgumentException("Usuário não encontrado.");
             }
             _repository.Delete(id);

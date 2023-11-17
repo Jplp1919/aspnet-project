@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "vzfrmleAvuv3uUu1B6PYLwtaEvr+I5pXI3XhoCBelmY=",
+  "Hash": "D5LSBE9VK5q57A2H8cmkGHXgKumLexqrejEMuM0GsHE=",
   "Source": "App.Web",
   "BasePath": "_content/App.Web",
   "Mode": "Default",
@@ -151,6 +151,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\pages\\pessoas.js"
+    },
+    {
+      "Identity": "C:\\Users\\criatec\\source\\repos\\api\\api test\\App.Api\\App.Web\\wwwroot\\js\\pages\\pessoas-delete.js",
+      "SourceId": "App.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\criatec\\source\\repos\\api\\api test\\App.Api\\App.Web\\wwwroot\\",
+      "BasePath": "_content/App.Web",
+      "RelativePath": "js/pages/pessoas-delete.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\pages\\pessoas-delete.js"
     },
     {
       "Identity": "C:\\Users\\criatec\\source\\repos\\api\\api test\\App.Api\\App.Web\\wwwroot\\js\\pages\\pessoas-formulario.js",

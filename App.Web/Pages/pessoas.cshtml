@@ -1,24 +1,4 @@
-﻿@* @page "/pessoas"
-
-<h4>Lista de Pessoas</h4>
-<button onclick="window.location.href = 'pessoas/formulario'">Adicionar</button>
-<div class="table-responsive" id="table">
-    <table class="table mb-0">
-        <thead>
-            <tr>
-                <th>Nome</th>
-                <th>Email</th>
-                <th>Id</th>
-            </tr>
-        </thead>
-    </table>
-</div>
-
-@section Scripts {
-    <script src="~/js/pages/pessoas.js"></script>
-} *@
-
-
+﻿
 @page "/pessoas"
 <div class="row">
     <div class="col-md-10 col-sm-12">
@@ -26,6 +6,14 @@
             <label>Filtro de Busca</label>
             <input type="text" name="busca" id="busca" class="form-control">
         </div>
+    </div>
+
+
+    <div class="col-md-2 mt-4">
+        <button class="btn btn-info" onclick="window.location.href = '/pessoas/deletar'" style="width:100%">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            Deletar
+        </button>
     </div>
 
     <div class="col-md-2 mt-4">
