@@ -14,6 +14,10 @@ namespace App.Domain.DTO
 
         public string Email { get; set; }
 
+        public DateTime DataNascimento { get; set; }
+
+        public string Cpf { get; set; }
+
         public string Senha { get; set; }
 
         public string Token { get; set; }
