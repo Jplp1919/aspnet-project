@@ -1,5 +1,4 @@
 ﻿
-
 async function PessoaListaPessoa(busca) {
     return new Promise((resolve, reject) => {
         Get('pessoa/buscarLista?busca=' + busca).then(function (response) {

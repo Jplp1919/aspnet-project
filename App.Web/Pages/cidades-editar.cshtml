@@ -1,0 +1,64 @@
+﻿@page "/cidades/editar"
+
+<h4>Editar Pessoas</h4>
+<div class="row">
+
+    <div class="col-md-6 col-sm-12">
+        <div class="col-md-3 col-sm-3">
+            <label>Id</label>
+            <input type="text" name="Id" class="form-control">
+        </div>
+    </div>
+
+    <div class="col-md-6 col-sm-20">
+        <div class="col-md-3 col-sm-20">
+            <label>Nome</label>
+            <input type="text" name="Nome" class="form-control">
+        </div>
+    </div>
+
+    <div class="col-md-16 col-sm-12">
+        <div class="col-md-3 col-sm-10">
+            <label>UF</label>
+            <input type="text" name="Uf" class="form-control">
+        </div>
+    </div>
+
+    <div class="col-md-12 col-sm-12">
+        <div class="col-md-3 col-sm-12">
+            <label>CEP</label>
+            <input type="text" name="Cep" class="form-control">
+        </div>
+    </div>
+   
+<div class="col-md-20 col-sm-12">
+    <div class="form-group mb-12">
+        <label>Filtro de Busca</label>
+        <input type="text" name="busca" id="busca" class="form-control">
+    </div>
+</div>
+
+    <div class="row">
+        <button onclick="window.location.href='/cidades'">Cancelar</button>
+        <button onclick="editar();">Salvar</button>
+    </div>
+
+<div class="table-responsive" id="table">
+    <table class="table table-striped" id="table-cidades">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>UF</th>
+                <th>CEP</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
+
+@section Scripts{
+    <script src="~/js/pages/cidades-editar.js"></script>
+}

@@ -21,6 +21,8 @@ namespace App.Application
 
             services.AddTransient<IPokemonService, PokemonService>();
 
+            services.AddTransient<ICidadeService, CidadeService>();
+
             
         }
     }

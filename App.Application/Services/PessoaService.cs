@@ -59,7 +59,7 @@ namespace App.Application.Services
                 Id = dadosAntigos.Id,
                 Nome = pessoa.Nome ?? dadosAntigos.Nome,
                 Cpf = pessoa.Cpf ?? dadosAntigos.Cpf,
-                DataNascimento = (pessoa.DataNascimento != null) ? pessoa.DataNascimento :
+                DataNascimento = (pessoa.DataNascimento.Year != 0000) ? pessoa.DataNascimento :
             dadosAntigos.DataNascimento,
                 Email = (pessoa.Email != null) ? pessoa.Email :
             dadosAntigos.Email,
