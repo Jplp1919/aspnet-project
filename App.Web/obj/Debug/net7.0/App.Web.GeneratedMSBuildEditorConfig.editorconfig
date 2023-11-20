@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\criatec\source\repos\api\api test\App.Api\App.Web
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/criatec/source/repos/api/api test/App.Api/App.Web/Pages/ciades-delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcY2lhZGVzLWRlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/criatec/source/repos/api/api test/App.Api/App.Web/Pages/cidades-editar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcY2lkYWRlcy1lZGl0YXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

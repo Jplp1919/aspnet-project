@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets\\js\\core\\requester.js"
     },
     {
+      "Id": "C:\\Users\\criatec\\source\\repos\\api\\api test\\App.Api\\App.Web\\wwwroot\\js\\pages\\cidades-delete.js",
+      "PackagePath": "staticwebassets\\js\\pages\\cidades-delete.js"
+    },
+    {
       "Id": "C:\\Users\\criatec\\source\\repos\\api\\api test\\App.Api\\App.Web\\wwwroot\\js\\pages\\cidades-editar.js",
       "PackagePath": "staticwebassets\\js\\pages\\cidades-editar.js"
     },
