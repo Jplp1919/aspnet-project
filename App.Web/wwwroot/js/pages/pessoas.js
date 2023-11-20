@@ -16,11 +16,14 @@ function load() {
     let busca = $('[name="busca"]').val();
     PessoaListaPessoa(busca).then(function (data) {
         $('#table tbody').html('');
+        console.log(data)
         data.forEach(obj => {
             $('#table tbody').append('' +
                 '<tr id="obj-' + obj.id + '">' +
                 '<td>' + (obj.id || '--') + '</td>' +
                 '<td>' + (obj.nome || '--') + '</td>' +
+                '<td>' + (obj.cpf || '--') + '</td>' +
+                '<td>' + (obj.datanascimento || '--') + '</td>' +
                 '<td>' + (obj.email || '--') + '</td>' +
                 '</tr>');
         });

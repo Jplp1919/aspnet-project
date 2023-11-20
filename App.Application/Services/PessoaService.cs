@@ -24,6 +24,12 @@ namespace App.Application.Services
                 
                 throw new ArgumentNullException(nameof(pessoa.Nome), "Nome não pode estar vazio.");
             }
+
+            if (string.IsNullOrEmpty(pessoa.Cpf))
+            {
+                throw new ArgumentNullException(nameof(pessoa.Nome), "O CPF não pode estar vazio.");
+            }
+
             if (string.IsNullOrEmpty(pessoa.Email))
             {
                 throw new ArgumentNullException(nameof(pessoa.Email), "Email não pode estar vazio.");
@@ -52,6 +58,9 @@ namespace App.Application.Services
             {
                 Id = dadosAntigos.Id,
                 Nome = pessoa.Nome ?? dadosAntigos.Nome,
+                Cpf = pessoa.Cpf ?? dadosAntigos.Cpf,
+                DataNascimento = (pessoa.DataNascimento != null) ? pessoa.DataNascimento :
+            dadosAntigos.DataNascimento,
                 Email = (pessoa.Email != null) ? pessoa.Email :
             dadosAntigos.Email,
                 Senha = (pessoa.Senha != null) ? pessoa.Senha :
@@ -85,8 +94,10 @@ namespace App.Application.Services
 
            (
            x.Nome.ToUpper().Contains(busca) ||
-           x.Id.ToString().ToUpper().Contains(busca) ||
-           x.Email.ToUpper().Contains(busca)
+           x.DataNascimento.Year.ToString().Contains(busca) ||
+           x.DataNascimento.Month.ToString().Contains(busca) ||
+           x.Cpf.ToUpper().Contains(busca)
+
            )
 
            ).ToList();
@@ -97,8 +108,8 @@ namespace App.Application.Services
         public Pessoa Login(string email, string senha)
         {
            var pessoas = new List<Pessoa>() { 
-             new Pessoa { Id = 1, Nome = "Johnny", Email = "silverhand@samurai.net", Senha = "samurai" },
-             new Pessoa { Id = 1, Nome = "V", Email = "v@arasaka.net", Senha = "123" }
+             new Pessoa { Id = 1, Nome = "teste", Email = "teste.net", Senha = "123" },
+             new Pessoa { Id = 1, Nome = "teste2", Email = "teste2.net", Senha = "123" }
        };
             return pessoas.FirstOrDefault(x =>
             x.Email == email
