@@ -27,7 +27,7 @@ namespace App.Application.Services
 
             if (string.IsNullOrEmpty(pessoa.Cpf))
             {
-                throw new ArgumentNullException(nameof(pessoa.Nome), "O CPF não pode estar vazio.");
+                throw new ArgumentNullException(nameof(pessoa.Cpf), "O CPF não pode estar vazio.");
             }
 
             if (string.IsNullOrEmpty(pessoa.Email))

@@ -1,13 +1,14 @@
 ﻿
 @page "/pessoas"
 <div class="row">
-    <div class="col-md-10 col-sm-12">
+    <div class="col-md-20 col-sm-12">
         <div class="form-group mb-12">
             <label>Filtro de Busca</label>
             <input type="text" name="busca" id="busca" class="form-control">
         </div>
     </div>
 
+    
 
     <div class="col-md-2 mt-4">
         <button class="btn btn-info" onclick="window.location.href = '/pessoas/deletar'" style="width:100%">
@@ -15,6 +16,14 @@
             Deletar
         </button>
     </div>
+
+    <div class="col-md-2 mt-4">
+        <button class="btn btn-info" onclick="window.location.href = '/pessoas/editar'" style="width:100%">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            Editar
+        </button>
+    </div>
+
 
     <div class="col-md-2 mt-4">
         <button class="btn btn-info" onclick="window.location.href = '/pessoas/formulario'" style="width:100%">
@@ -31,7 +40,7 @@
             <tr>
                 <th>Id</th>
                 <th>Nome</th>
-                <th>CPF</th>
+                <th>CPFD</th>
                 <th>Data de Nascimento</th>
                 <th>Email</th>
                 <th></th>

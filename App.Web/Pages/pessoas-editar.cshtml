@@ -1,0 +1,81 @@
+﻿@page "/pessoas/editar"
+
+<h4>Editar Pessoas</h4>
+<div class="row">
+
+    <div class="col-md-6 col-sm-12">
+        <div class="col-md-3 col-sm-3">
+            <label>Id</label>
+            <input type="text" name="Id" class="form-control">
+        </div>
+    </div>
+
+    <div class="col-md-6 col-sm-20">
+        <div class="col-md-3 col-sm-20">
+            <label>Nome</label>
+            <input type="text" name="Nome" class="form-control">
+        </div>
+    </div>
+
+    <div class="col-md-16 col-sm-12">
+        <div class="col-md-3 col-sm-10">
+            <label>CPF</label>
+            <input type="text" name="Cpf" class="form-control">
+        </div>
+    </div>
+
+    <div class="col-md-6 col-sm-12">
+        <div class="col-md-3 col-sm-15">
+            <label>Data de Nascimento</label>
+            <input type="date" name="DataNascimento" class="form-control">
+        </div>
+    </div>
+
+    <div class="col-md-12 col-sm-12">
+        <div class="col-md-3 col-sm-12">
+            <label>Email</label>
+            <input type="text" name="Email" class="form-control">
+        </div>
+    </div>
+    <div class="col-md-6 col-sm-12">
+        <div class="col-md-3 col-sm-15">
+            <label>Senha</label>
+            <input type="text" name="Senha" class="form-control">
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <button onclick="window.location.href='/pessoas'">Cancelar</button>
+    <button onclick="editar();">Salvar</button>
+</div>
+
+<div class="col-md-20 col-sm-12">
+    <div class="form-group mb-12">
+        <label>Filtro de Busca</label>
+        <input type="text" name="busca" id="busca" class="form-control">
+    </div>
+</div>
+
+
+
+<div class="table-responsive" id="table">
+    <table class="table table-striped" id="table-pessoas">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>CPFD</th>
+                <th>Data de Nascimento</th>
+                <th>Email</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
+
+@section Scripts{
+    <script src="~/js/pages/pessoas-editar.js"></script>
+}

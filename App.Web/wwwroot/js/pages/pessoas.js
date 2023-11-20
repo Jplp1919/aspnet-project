@@ -23,7 +23,7 @@ function load() {
                 '<td>' + (obj.id || '--') + '</td>' +
                 '<td>' + (obj.nome || '--') + '</td>' +
                 '<td>' + (obj.cpf || '--') + '</td>' +
-                '<td>' + (obj.datanascimento || '--') + '</td>' +
+                '<td>' + (obj.dataNascimento || '--') + '</td>' +
                 '<td>' + (obj.email || '--') + '</td>' +
                 '</tr>');
         });

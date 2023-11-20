@@ -1,6 +1,8 @@
 ﻿function salvar() {
     let obj = {
         Nome: ($("[name='Nome']").val() || ""),
+        Cpf: ($("[name='Cpf']").val() || ""),
+        DataNascimento: ($("[name='DataNascimento']").val() || ""),
         Email: ($("[name='Email']").val() || ""),
         Senha: ($("[name='Senha']").val() || "")
     };
