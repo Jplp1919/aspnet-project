@@ -4,7 +4,7 @@ async function PessoaListaPessoa(busca) {
     return new Promise((resolve, reject) => {
         Get('pessoa/buscarLista?busca=' + busca).then(function (response) {
             console.log(response)
-            alet(response)
+           
             if (response.status === 'success') {
                 resolve(response.data);
             } else {
