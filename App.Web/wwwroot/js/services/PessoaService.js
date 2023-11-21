@@ -18,7 +18,7 @@ async function PessoaListaPessoa(busca) {
 
 async function PessoaBuscaPorId(id) {
     return new Promise((resolve, reject) => {
-        Get('pessoa/buscaPorId?id=' + id).then(function (response) {
+        Get('pessoa/buscaPorId?id =' + id).then(function (response) {
             if (response.status === 'success') {
                 resolve(response.data);
             } else {
@@ -66,7 +66,21 @@ async function PessoaDeletar(id) {
 
 async function PessoaEditar(id) {
     return new Promise((resolve, reject) => {
-        Put('Pessoa/Editar?id=', id).then(function (response) {
+        Put('pessoa/Editar?id=', id).then(function (response) {
+            if (response.status === 'success') {
+                resolve(response.data);
+            } else {
+                reject(response.message);
+            }
+        }, function (err) {
+            console.error(err);
+            reject('Erro desconhecido');
+        });
+    });
+}
+async function PessoaBuscaPorId(id) {
+    return new Promise((resolve, reject) => {
+        Get('pessoa/BuscaPorId?id=' + id).then(function (response) {
             if (response.status === 'success') {
                 resolve(response.data);
             } else {

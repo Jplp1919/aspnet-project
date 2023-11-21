@@ -10,8 +10,6 @@ $(document).ready(function () {
 });
 
 
-
-
 function load() {
     let busca = $('[name="busca"]').val();
     PessoaListaPessoa(busca).then(function (data) {
@@ -25,10 +23,37 @@ function load() {
                 '<td>' + (obj.cpf || '--') + '</td>' +
                 '<td>' + (obj.dataNascimento || '--') + '</td>' +
                 '<td>' + (obj.email || '--') + '</td>' +
+                '<td>' +
+                '<button onclick="editItem(' + obj.id + ')">Editar</button>' +
+                '<button onclick="deleteItem(' + obj.id + ')">Deletar</button>' +
+                '</td>' +
                 '</tr>');
         });
 
     });
 
+}
+
+
+
+function editItem(id) {
+    window.location.href = '/pessoas/editar?Id=' + id;
+}
+
+function deleteItem(id) {
+
+    if (confirm('Realmente quer deletar este item?')) {
+        PessoaDeletar(id).then(function () {
+            window.location.href = '/pessoas';
+        }, function (err) {
+            alert(err);
+        });
+    }
+}
+
+
+
+function getUltimoAlias() {
+    return window.location.toString().split('/').pop();
 }
 

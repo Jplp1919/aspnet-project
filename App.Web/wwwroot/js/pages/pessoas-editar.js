@@ -1,4 +1,7 @@
-﻿function editar() {
+﻿function editar(Id) {
+    obj = PessoaBuscaPorId(Id);
+    console.log(obj.nome);
+
     let id = {
         Id: ($("[name='Id']").val()),
         Nome: ($("[name='Nome']").val() || ''),
@@ -26,6 +29,10 @@ $(document).ready(function () {
 });
 
 function load() {
+    let id = getUltimoAlias();
+    console.log(id);
+
+
     let busca = $('[name="busca"]').val();
     PessoaListaPessoa(busca).then(function (data) {
         $('#table tbody').html('');
@@ -43,4 +50,10 @@ function load() {
 
     });
 
+}
+
+
+function getUltimoAlias() {
+    return window.location.toString().split('=').pop();
+  
 }
