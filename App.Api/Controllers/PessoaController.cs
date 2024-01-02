@@ -30,7 +30,7 @@ namespace App.Api.Controllers
             }
         }
         [HttpPut("editar")]
-        public IActionResult Editar([FromBody] Pessoa pessoa)
+        public IActionResult Editar([FromHeader] Pessoa pessoa)
         {
             try
             {
@@ -56,7 +56,7 @@ namespace App.Api.Controllers
             }
         }
         [HttpGet("buscarPorId")]
-        public IActionResult BuscarPorId([FromHeader] int id)
+        public JsonResult BuscarPorId(int id)
         {
             try
             {

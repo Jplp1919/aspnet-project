@@ -32,26 +32,34 @@ function load() {
     let id = getUltimoAlias();
     console.log(id);
 
+    let obj = PessoaBuscaPorId(id);
 
-    let busca = $('[name="busca"]').val();
-    PessoaListaPessoa(busca).then(function (data) {
+    console.log(obj.nome);
+
+    PessoaBuscaPorId(id).then(function (obj) {
         $('#table tbody').html('');
-        console.log(data)
-        data.forEach(obj => {
-            $('#table tbody').append('' +
-                '<tr id="obj-' + obj.id + '">' +
-                '<td>' + (obj.id || '--') + '</td>' +
-                '<td>' + (obj.nome || '--') + '</td>' +
-                '<td>' + (obj.cpf || '--') + '</td>' +
-                '<td>' + (obj.dataNascimento || '--') + '</td>' +
-                '<td>' + (obj.email || '--') + '</td>' +
-                '</tr>');
-        });
+        $('#table tbody').append('' +
+            '<tr id="obj-' + obj.id + '">' +
+            '<td>' + (obj.id || '--') + '</td>' +
+            '<td>' + (obj.nome || '--') + '</td>' +
+            '<td>' + (obj.cpf || '--') + '</td>' +
+            '<td>' + (obj.dataNascimento || '--') + '</td>' +
+            '<td>' + (obj.email || '--') + '</td>' +
+            '</tr>');
+
+        $('#idLinha').val(obj.id);
+        $('#nomeLinha').val(obj.nome);
+        $('#cpfLinha').val(obj.cpf);
+        $('#dataNascimentoLinha').val(obj.dataNascimento);
+        $('#emailLinha').val(obj.email);
 
     });
 
 }
 
+function setValueNome() {
+   
+}
 
 function getUltimoAlias() {
     return window.location.toString().split('=').pop();
